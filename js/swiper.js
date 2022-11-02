@@ -1,5 +1,5 @@
 var swiper = new Swiper(".offers-slider", {
-    slidesPerView: 2,
+
     spaceBetween: 20,
     grabCursor: true,
     loop: true,
@@ -8,4 +8,15 @@ var swiper = new Swiper(".offers-slider", {
         delay: 2500,
         disableOnInteraction: false,
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 2,
+        },
+    }
 });
